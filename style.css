@@ -1,0 +1,150 @@
+body
+{
+    background-color: black;
+}
+h1
+{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#box1
+{
+    border: 2px solid blue;
+    margin-left: 25px;
+    height: 150px;
+    background-color: rgb(94, 238, 159);
+    width: 150px;
+    border-color: rgb(94, 238, 159);
+}
+#box1:hover
+{
+    animation: roatate 5s infinite;
+}
+#box2:hover
+{
+    animation: roatate 5s infinite;
+}
+#box3:hover
+{
+    animation: roatate 5s infinite;
+}
+#box4:hover
+{
+    animation: roatate 5s infinite;
+}
+#box5:hover
+{
+    animation: roatate 5s infinite;
+}
+#box2
+{
+    border: 2px solid blue;
+    height: 150px;
+    background-color: rgb(94, 238, 159);
+    width: 150px;
+    border-color: rgb(94, 238, 159);
+    margin-left: 305px;
+}
+#box3
+{
+    border: 2px solid blue;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(94, 238, 159);
+    border-color:rgb(94, 238, 159);
+    margin-left: 650px;
+}
+#box4
+{
+    border: 2px solid blue;
+    height: 150px;
+    border-color: rgb(94, 238, 159);
+    background-color: rgb(94, 238, 159);
+    width: 150px;
+    margin-left: 1000px;
+}
+#box5
+{
+    border: 2px solid blue;
+    height: 150px;
+    width: 150px;
+    border-color: rgb(94, 238, 159);
+    background-color: rgb(94, 238, 159);
+    margin-left: 1350px;
+}
+.child
+{
+    display: inline-block;
+    position: absolute;
+    margin-top: 225px;
+    border-radius: 0 150px;
+    box-shadow: 5px 5px 5px white;
+    transition: all 2s ease;
+    transition-delay: 2s;
+}
+@keyframes roatate
+{
+    50%
+    {
+        transform: rotate(-700deg);
+    } 
+    100%
+    {
+        transform: rotate(100deg);
+    }   
+}
+@media (min-width:320px) 
+{
+    .child
+    {
+        position: absolute;
+    }
+    #box2
+    {
+        border: 2px solid blue;
+        height: 150px;
+        background-color: rgb(94, 238, 159);
+        width: 150px;
+        border-color: rgb(94, 238, 159);
+        margin-left: 40%;
+        margin-top: 400px;
+    }
+    #box1
+    {
+        margin-left: 40%;
+        margin-top: 100px;
+
+    }
+    #box3
+    {
+        border: 2px solid blue;
+        height: 150px;
+        width: 150px;
+        background-color: rgb(94, 238, 159);
+        border-color:rgb(94, 238, 159);
+        margin-left: 40%;
+        margin-top: 700px;;
+    }
+    #box4
+    {
+        border: 2px solid blue;
+        height: 150px;
+        border-color: rgb(94, 238, 159);
+        background-color: rgb(94, 238, 159);
+        width: 150px;
+        margin-top:1000px;
+        margin-left: 40%;
+    }
+    #box5
+    {
+        border: 2px solid blue;
+        height: 150px;
+        width: 150px;
+        border-color: rgb(94, 238, 159);
+        background-color: rgb(94, 238, 159);
+        margin-top: 1300px;
+        margin-left: 40%;
+    }   
+}
